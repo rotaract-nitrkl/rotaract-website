@@ -10742,3 +10742,9 @@ header.masthead h1 {
   padding-right: 15px;
   padding-left: 
 }
+#past_events{
+  display: none;
+}
+#upcoming_events{
+  display: none;
+}
