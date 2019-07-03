@@ -10770,3 +10770,37 @@ header.masthead h1 {
 #upcoming_events{
   display: none;
 }
+
+/*for expanding images for gallery page*/
+
+.expandedImg_container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+img {
+  opacity: 1; 
+  cursor: pointer; 
+}
+
+img:hover {
+  opacity: 0.8;
+}
+

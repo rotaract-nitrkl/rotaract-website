@@ -115,51 +115,47 @@
   <div class="row row-grid">
     <div class="col-md-4">
       <div class="thumbnail">
-        <a href="img\gallery\shanti bhaban\1.jpg" target="_blank">
-          <img src="img\gallery\shanti bhaban\1.jpg" alt="Lights" class="img-responsive" style="width:100%">
-        </a>
+          <img src="img\gallery\shanti bhaban\1.jpg" alt="Lights" style="width:100%" onclick="image_expansion(this);">
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-        <a href="img\gallery\shanti bhaban\2.jpg" target="_blank">
-          <img src="img\gallery\shanti bhaban\2.jpg" alt="Nature" class="img-responsive" style="width:100%">
-        </a>
+          <img src="img\gallery\shanti bhaban\2.jpg" alt="Nature" style="width:100%" onclick="image_expansion(this);">
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-        <a href="img\gallery\shanti bhaban\3.jpg" target="_blank">
-          <img src="img\gallery\shanti bhaban\3.jpg" alt="Fjords" class="img-responsive" style="width:100%">
-        </a>
+          <img src="img\gallery\shanti bhaban\3.jpg" alt="Fjords" style="width:100%" onclick="image_expansion(this);">
       </div>
     </div>
   </div>
 	<div class="row row-grid">
 	    <div class="col-md-4">
 	      <div class="thumbnail">
-	        <a href="img\gallery\shanti bhaban\4.jpg" target="_blank">
-	          <img src="img\gallery\shanti bhaban\4.jpg" alt="Lights" class="img-responsive" style="width:100%">
-	        </a>
+	          <img src="img\gallery\shanti bhaban\4.jpg" alt="Lights" style="width:100%" onclick="image_expansion(this);">
 	      </div>
 	    </div>
 	    <div class="col-md-4">
 	      <div class="thumbnail">
-	        <a href="img\gallery\shanti bhaban\5.jpg" target="_blank">
-	          <img src="img\gallery\shanti bhaban\5.jpg" alt="Nature" class="img-responsive" style="width:100%">
-	        </a>
+	          <img src="img\gallery\shanti bhaban\5.jpg" alt="Nature" style="width:100%" onclick="image_expansion(this);">
 	      </div>
 	    </div>
 	    <div class="col-md-4">
 	      <div class="thumbnail">
-	        <a href="img\gallery\shanti bhaban\6.jpg" target="_blank">
-	          <img src="img\gallery\shanti bhaban\6.jpg" alt="Fjords" class="img-responsive" style="width:100%">
-	        </a>
+	          <img src="img\gallery\shanti bhaban\6.jpg" alt="Fjords" style="width:100%" onclick="image_expansion(this);">
 	      </div>
 	    </div>
 	  </div>
 	</div>
 </div>
+
+<div class="expandedImg_container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
 </section>
 
 <!-- vday -->
@@ -593,6 +589,7 @@
 
 
 	<!-- Footer -->
+
 
   <div class="navbar navbar-inverse navbar-fixed-bottom">
       <div class="container">

@@ -62,5 +62,11 @@ function show(shown, hidden){
       document.getElementById(hidden).style.display='none';
       return false;
     }
-
+function image_expansion(images){
+  var img_expanded = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  img_expanded.src = images.src;
+  imgText.innerHTML = images.alt;
+  image_expanded.parentElement.style.display = "block";
+}
 
