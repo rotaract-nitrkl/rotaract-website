@@ -115,24 +115,24 @@
   <div class="row row-grid">
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="img\gallery\shanti bhaban\1.jpg" alt="Lights" style="width:100%" onclick="image_expansion(this);">
+          <img src="img\gallery\shanti bhaban\1.jpg"  alt="Lights" style="width:100%" >
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="img\gallery\shanti bhaban\2.jpg" alt="Nature" style="width:100%" onclick="image_expansion(this);">
+          <img src="img\gallery\shanti bhaban\2.jpg"  alt="Nature" style="width:100%" >
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="img\gallery\shanti bhaban\3.jpg" alt="Fjords" style="width:100%" onclick="image_expansion(this);">
+          <img src="img\gallery\shanti bhaban\3.jpg" id="myImg" alt="Fjords" style="width:100%" >
       </div>
     </div>
   </div>
 	<div class="row row-grid">
 	    <div class="col-md-4">
 	      <div class="thumbnail">
-	          <img src="img\gallery\shanti bhaban\4.jpg" alt="Lights" style="width:100%" onclick="image_expansion(this);">
+	          <img src="img\gallery\shanti bhaban\4.jpg" alt="Lights" style="width:100%" >
 	      </div>
 	    </div>
 	    <div class="col-md-4">
@@ -149,11 +149,12 @@
 	</div>
 </div>
 
-<div class="expandedImg_container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
+<div id="myModal" class="modal">
+  <span class="closebtn">&times;</span>
+  <img class="img-content" id="img01">
+  <div id="caption"></div>
 </div>
+
 
 
 </section>
@@ -607,6 +608,32 @@
 
       </div>
   </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+
+
 
 
   <!-- Bootstrap core JavaScript -->
