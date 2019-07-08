@@ -6992,7 +6992,6 @@ button.bg-light:focus {
 .bg-dark {
   background-color: #343a40 !important;
 }
-
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
@@ -10762,7 +10761,7 @@ header.masthead h1 {
 .logo{
   height: 50px;
   padding-right: 15px;
-  padding-left: 
+  padding-left:
 }
 #past_events{
   display: none;
@@ -10817,7 +10816,7 @@ header.masthead h1 {
 }
 
 /* Add Animation */
-.img-content, #caption {  
+.img-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -10825,12 +10824,12 @@ header.masthead h1 {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
+  from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
 }
 
@@ -10858,4 +10857,3 @@ header.masthead h1 {
     width: 100%;
   }
 }
-
