@@ -115,46 +115,61 @@
   <div class="row row-grid">
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="img\gallery\shanti bhaban\1.jpg"  alt="Lights" style="width:100%" >
+          <img src="img\gallery\shanti bhaban\1.jpg" style="width:100%" >
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="img\gallery\shanti bhaban\2.jpg"  alt="Nature" style="width:100%" >
+          <img src="img\gallery\shanti bhaban\2.jpg" style="width:100%" >
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="img\gallery\shanti bhaban\3.jpg" id="myImg" alt="Fjords" style="width:100%" >
+          <img src="img\gallery\shanti bhaban\3.jpg" style="width:100%" >
+          <!-- The Modal -->
+			  <!-- <div id="myModal" class="modal"> -->
+
+  <!-- The Close Button --> 
+  				<!-- <span class="closebtn">&times;</span> -->
+
+  <!-- Modal Content (The Image) -->
+  				<!-- <img class="img-content" id="img01"> --> 
+
+  <!-- Modal Caption (Image Text) -->
+  				<!--  <div id="caption"></div>
+			</div> -->  
       </div>
     </div>
   </div>
 	<div class="row row-grid">
 	    <div class="col-md-4">
 	      <div class="thumbnail">
-	          <img src="img\gallery\shanti bhaban\4.jpg" alt="Lights" style="width:100%" >
+	          <img src="img\gallery\shanti bhaban\4.jpg" style="width:100%" >
 	      </div>
 	    </div>
 	    <div class="col-md-4">
 	      <div class="thumbnail">
-	          <img src="img\gallery\shanti bhaban\5.jpg" alt="Nature" style="width:100%" onclick="image_expansion(this);">
+	          <img src="img\gallery\shanti bhaban\5.jpg" style="width:100%" onclick="image_expansion(this);">
 	      </div>
 	    </div>
 	    <div class="col-md-4">
 	      <div class="thumbnail">
-	          <img src="img\gallery\shanti bhaban\6.jpg" alt="Fjords" style="width:100%" onclick="image_expansion(this);">
+	          <img src="img\gallery\shanti bhaban\6.jpg" style="width:100%" onclick="image_expansion(this);">
 	      </div>
 	    </div>
 	  </div>
 	</div>
 </div>
 
-<div id="myModal" class="modal">
-  <span class="closebtn">&times;</span>
-  <img class="img-content" id="img01">
-  <div id="caption"></div>
-</div>
 
+<!-- <div id="myImg">
+	<div id="myModal" class="modal">
+  		<span class="close">&times;</span>
+  		<img class="img-content" id="img01">
+  		<div id="caption"></div>
+</div>
+</div>
+ -->
 
 
 </section>
@@ -541,22 +556,32 @@
   <div class="row row-grid">
     <div class="col-md-4">
       <div class="thumbnail">
-        <a href="img\gallery\shanti bhaban\1.jpg" target="_blank">
-          <img src="img\gallery\shanti bhaban\1.jpg" alt="Lights" class="img-responsive" style="width:100%">
-        </a>
+          <img src="img\gallery\shanti bhaban\1.jpg" id="myImg" alt="Lights" class="img-responsive" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          <!-- The Modal -->
+			 <!--  <div id="myModal" class="modal"> -->
+
+  <!-- The Close Button --> 
+  				<!-- <span class="closebtn">&times;</span> -->
+
+  <!-- Modal Content (The Image) -->
+  				<!-- <img class="img-content" id="img02">  -->
+
+  <!-- Modal Caption (Image Text) -->
+  				<!--  <div id="caption"></div>
+			</div>   -->
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="img\gallery\shanti bhaban\2.jpg" target="_blank">
-          <img src="img\gallery\shanti bhaban\2.jpg" alt="Nature" class="img-responsive" style="width:100%">
+          <img src="img\gallery\shanti bhaban\2.jpg" alt="Nature" class="img-responsive" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         </a>
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="img\gallery\shanti bhaban\3.jpg" target="_blank">
-          <img src="img\gallery\shanti bhaban\3.jpg" alt="Fjords" class="img-responsive" style="width:100%">
+          <img src="img\gallery\shanti bhaban\3.jpg" alt="Fjords" class="img-responsive" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         </a>
       </div>
     </div>
@@ -565,27 +590,83 @@
 	    <div class="col-md-4">
 	      <div class="thumbnail">
 	        <a href="img\gallery\shanti bhaban\4.jpg" target="_blank">
-	          <img src="img\gallery\shanti bhaban\4.jpg" alt="Lights" class="img-responsive" style="width:100%">
+	          <img src="img\gallery\shanti bhaban\4.jpg" alt="Lights" class="img-responsive" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
 	        </a>
 	      </div>
 	    </div>
 	    <div class="col-md-4">
 	      <div class="thumbnail">
 	        <a href="img\gallery\shanti bhaban\5.jpg" target="_blank">
-	          <img src="img\gallery\shanti bhaban\5.jpg" alt="Nature" class="img-responsive" style="width:100%">
+	          <img src="img\gallery\shanti bhaban\5.jpg" alt="Nature" class="img-responsive" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
 	        </a>
 	      </div>
 	    </div>
 	    <div class="col-md-4">
 	      <div class="thumbnail">
 	        <a href="img\gallery\shanti bhaban\6.jpg" target="_blank">
-	          <img src="img\gallery\shanti bhaban\6.jpg" alt="Fjords" class="img-responsive" style="width:100%">
+	          <img src="img\gallery\shanti bhaban\6.jpg" alt="Fjords" class="img-responsive" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
 	        </a>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+<div id="myModal" class="modal">
+  <span class="closebtn cursor" onclick="closeModal()">&times;</span>
+  <div class="img-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="img\gallery\shanti bhaban\1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="img\gallery\shanti bhaban\2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="img\gallery\shanti bhaban\3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="img\gallery\shanti bhaban\4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="img\gallery\shanti bhaban\5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="img\gallery\shanti bhaban\6.jpg" style="width:100%">
+    </div>
+
+
+     <div class="column">
+      <img class="demo cursor" src="img\gallery\shanti bhaban\1.jpg" style="width:100%" alt="hey" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\gallery\shanti bhaban\2.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\gallery\shanti bhaban\3.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\gallery\shanti bhaban\4.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\gallery\shanti bhaban\5.jpg" style="width:100%" onclick="currentSlide(5)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img\gallery\shanti bhaban\6.jpg" style="width:100%" onclick="currentSlide(6)">
+    </div>
+    
+  </div>
 </div>
+
 </section>
 
 
@@ -609,28 +690,69 @@
       </div>
   </div>
 
-<script>
-// Get the modal
+<!-- <script>
+ Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+ Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
+var modalImg1 = document.getElementById("img02");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
+ 
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+ Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closebtn")[0];
 
-// When the user clicks on <span> (x), close the modal
+ When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
 }
+</script> -->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 </script>
+
 
 
 
