@@ -1,310 +1,281 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<meta name="description" content="">
-  	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  	<title>Events</title>
+	<title>Events</title>
 
-  	<!-- Font Awesome Icons -->
-  	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<!-- Font Awesome Icons -->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-  	<!-- Google Fonts -->
-  	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  	<!-- Plugin CSS -->
-  	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+	<!-- Plugin CSS -->
+	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-  	<!-- Theme CSS - Includes Bootstrap -->
-  	<link href="css/creative.css" rel="stylesheet">
+	<!-- Theme CSS - Includes Bootstrap -->
+	<link href="css/creative.css" rel="stylesheet">
 
-    <!-- CSS files for calender -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="css/calender_css/demo.css"/>
-    <link rel="stylesheet" href="css/calender_css/theme3.css"/>
+	<!-- CSS files for calender -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="css/calender_css/demo.css" />
+	<link rel="stylesheet" href="css/calender_css/theme3.css" />
 </head>
+
 <body id="page-top">
 
-  <!-- Navigation -->
+	<!-- Navigation -->
 
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top py-3">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/RotaractLogo.png" class="img-responsive logo"></a>
-      <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBarResponsive" aria-controls="navBarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navBarResponsive">
-          <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#past_events" onclick="return show('past_events','upcoming_events')">Past Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#upcoming_events" onclick="return show('upcoming_events','past_events')">Upcoming Events</a>
-            </li>
-          </ul>
-      </div>
-    </div>
-  </nav>
+	<nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/RotaractLogo.png" class="img-responsive logo"></a>
+			<button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBarResponsive" aria-controls="navBarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navBarResponsive">
+				<ul class="navbar-nav ml-auto my-2 my-lg-0">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#past_events" onclick="return show('past_events','upcoming_events')">Past Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#upcoming_events" onclick="return show('upcoming_events','past_events')">Upcoming Events</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-  <!-- MASTHEAD -->
-  <header class="masthead">
-  	<div class="container h-100">
+	<!-- MASTHEAD -->
+	<header class="masthead">
+		<div class="container h-100">
 
-      <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-10 align-self-baseline">
-          <h1 class="text-uppercase text-white font-weight-bold">Rotaract @EVENTS</h1>
-          <hr class="divider my-4">
+			<div class="row h-100 align-items-center justify-content-center text-center">
+				<div class="col-lg-10 align-self-baseline">
+					<h1 class="text-uppercase text-white font-weight-bold">Rotaract @EVENTS</h1>
+					<hr class="divider my-4">
 
-          <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-interval="1000">
-                <img src="img\gallery\shanti bhaban\1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-interval="1000">
-                <img src="img\gallery\shanti bhaban\2.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img\gallery\shanti bhaban\3.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img\gallery\shanti bhaban\4.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img\gallery\shanti bhaban\5.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img\gallery\shanti bhaban\6.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+					<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-interval="1000">
+								<img src="img\gallery\shanti bhaban\1.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item" data-interval="1000">
+								<img src="img\gallery\shanti bhaban\2.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img\gallery\shanti bhaban\3.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img\gallery\shanti bhaban\4.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img\gallery\shanti bhaban\5.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="img\gallery\shanti bhaban\6.jpg" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
 
-        </div>
-        <!--<div class="col-lg-8 align-self-baseline">
+				</div>
+				<!--<div class="col-lg-8 align-self-baseline">
             <p class="text-white-75 font-weight-light mb-5 text-justify-center"></p>
         </div>-->
-      </div>
-  	</div>
-  </header>
+			</div>
+		</div>
+	</header>
 
-  <!-- PAST EVENTS -->
-  <section id="past_events">
-  	<div class="page-section bg-primary">
-  		<div class="container">
-  			<div class="row justify-content-center">
-  				<div class="col-lg-8 text-center">
-  					<h2 class="text-white mt-0">SaPNA</h2>
-  					<hr class="divider light my-4">
-            <h6><strong>"We make a living by what we get, but we make a life by what we give."</strong></h6>
-  					<p class="text-white-50 mb-5">
-					The members of the Rotaract Club of NIT Rourkela, visited OSAP Battalion, sector-2 on 24th of March, to organize a Menstrual Awareness Campaign. The event was themed, SaPNA: Sanitary Pads 'n Awareness. The money collected during fundraising events like Housie and V'day are reimbursed in this event. The prime purpose was setting up platforms that encourage discussions about menstruation and, raise awareness amongst the slum women on the necessity of using sanitary pads. The atmosphere was eased with the screening of the movie "Padman". The ladies of different age groups gathered and they were told about the safety precautions that they should uptake during menstruation. There was a door to door sanitary pads distribution. The happiness on their face, after the interactive session, was our biggest reward.</p>
-					<p><strong>The Rotaract family hopes to bring joy to each and every one.</strong></p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+	<!-- PAST EVENTS -->
+	<section id="past_events">
+		<div class="page-section bg-primary">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">SaPNA</h2>
+						<hr class="divider light my-4">
+						<h6><strong>"We make a living by what we get, but we make a life by what we give."</strong></h6>
+						<p class="text-white-50 mb-5">
+							The members of the Rotaract Club of NIT Rourkela, visited OSAP Battalion, sector-2 on 24th of March, to organize a Menstrual Awareness Campaign. The event was themed, SaPNA: Sanitary Pads 'n Awareness. The money collected during
+							fundraising events like Housie and V'day are reimbursed in this event. The prime purpose was setting up platforms that encourage discussions about menstruation and, raise awareness amongst the slum women on the necessity of using
+							sanitary pads. The atmosphere was eased with the screening of the movie "Padman". The ladies of different age groups gathered and they were told about the safety precautions that they should uptake during menstruation. There was a door
+							to door sanitary pads distribution. The happiness on their face, after the interactive session, was our biggest reward.</p>
+						<p><strong>The Rotaract family hopes to bring joy to each and every one.</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  	<div class="page-section bg-dark text-white">
-  		<div class="container">
-  			<div class="row justify-content-center">
-  				<div class="col-lg-8 text-center">
-  					<h2 class="text-white mt-0">V-DAY EVENT</h2>
-  					<hr class="divider light my-4">
-  					<p class="text-white-50 mb-5">We had our pre-valentine event <strong>"Love Booth"</strong>, where we provided a sky of fun to the love birds. Valentines Day Card was sold by Rotaract Club of NIT Rourkela during NITRUtsav and the money collected by selling them, were used to conduct other events. V-day is the major fundraiser project for the club. In this project, club members make handmade as well as printed cards and these are sold among the mass. The V-day project was a very successful event of Rotaract club. This year Rotaractors sold numerous cards and managed to collect very good fund. Club also provided the facility to deliver card at recipients room on Valentine's day and sending card anonymously was the best idea which helped in increasing the sales. The club sold printed cards for Valentine, friend as well as for prank in three different sizes.</p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-
-
-    <div class="page-section bg-primary">
-  		<div class="container">
-  			<div class="row justify-content-center">
-  				<div class="col-lg-8 text-center">
-  					<h2 class="text-white mt-0">Housie Event</h2>
-  					<hr class="divider light my-4">
-  					<p class="text-white-50 mb-5">The Rotaract Club organized a fun event,<strong>"Tambola"</strong>in the institute where we sold a large number of housie tickets and the money raised by selling the tickets are used for a good cause. The event took place on 4th February at the Lecture Avenue of the institute where a large mass of enthusiastic students was there to be a part of the event.The event gathered a huge crowd as people kept coming in, to try out their luck. Each ticket cost 10 rupees. The money raised from the housie and V-Day , was utilized to organize an event "SaPNA", awareness on menstruation, at the OSAP Battalion slum. The happiness that we see in the students' eyes is what we work for and that happiness is what satisfies us.</p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
-
-    <div class="page-section bg-dark text-white">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">OSAP Battalion</h2>
-            <hr class="divider light my-4">
-            <p class="text-white-50 mb-5">Under this event, we went to OSAP Battalion which is a slum in Rourkela. We donated clothes and stationary items such as pencils to the inhabitants.Giving is the greatest art of grace and this event was a small act of many. The children's faces were bright with laughter as we gave them chocolates and played games. Some of them even volunteered to perform on songs for us. It was a great learning experience for all of us. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section bg-primary">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">Birsa Munda Bidyapeeth</h2>
-            <hr class="divider light my-4">
-            <h6><strong>"Education is the most powerful weapon that we can use to change the world."</strong></h6>
-            <p class="text-white-50 mb-5">Keeping this in mind, we go to Birsa Munda Bidyapeeth every weekend. it is a government aided school which teaches the children of the area. Education is the most basic right of a person. If we are able to provide good education to any child, then it's our priviledge. We try to teach the students within the best of our capabilities by providing visual aids along with board work so that they can grasp more knowledge. This is a continued process throughout the year which helps us keep track of our work.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
- <div class="page-section bg-dark text-white">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">BlueLink</h2>
-            <hr class="divider light my-4">
-            <p class="text-white-50 mb-5">It is an initiative by our club for the prevention and cure of ocean pollution. It was held during Innovision 2018- the technomanagement fest of NIT Rourkela. Thos event witnessed a formation of human chain in the shape of OCEAN and was captured with the help of a drone. The participants of the human chain were given freebies such as caps and arm bands. Photo booths were also made by us and stationed in the ground where the event took place. This social event was a huge success and made it to newspapers.
-              There, the BlueLink event was a stepping stone towards stopping ocean pollution and proving <strong>#IndiaSpeaksBlueToo</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="page-section bg-primary">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">BlueTalk</h2>
-            <hr class="divider light my-4">  
-            <p class="text-white-50 mb-5">BlueTalk was an awareness program organised in collaboration with Hourglass club of nIT Rourkela with an aim to create awareness about environment's degrading situation.<strong>"Ocean pollution- the greatest tragedy of our generation"</strong> was thoroughly discussed during the entire event. A presentation was delivered by the members of Hourglass demonstrating the 'WHAT,HOW,WHYs' of ocean pollution. A Question-answer session was held after the presentation to help the audience understand what the club was doing towards eliminating ocean pollution.It was a precursor to our event BlueLink.
-
-            Our ocean is in dire need of help. Garbage dumped into the ocean is continuously degrading its quality. Animals are dying and water-borne diseases are spreading and this was just a small step towards starting a revolution. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page-section bg-dark text-white">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">Shanti Bhawan</h2>
-            <hr class="divider light my-4">
-            <p class="text-white-50 mb-5">Under this event the Rotaract Club visited an old age home ,Shanti Bhawan in Rourkela.Prior to this event,the members conducted a cloth donation drive in the campus of NIT Rourkela where they approached the faculty members to contribute to charity.The collected wearables were then donated to the elders and children in Shanti Bhawan. We had an interactive evening with them where they shared their tales of woes and melancholia. Entertainment programmes such as dance and songs were prepared by us for their enjoyment.Efforts were put in to surround them with food for the evening on a happy and fulfilling note.
-            <br>
-            The aim was to provide a day of companionship and emotional support to the elderly and the children residing in Shanti Bhawan.We learnt about their difficulties so as to provide them with better service next time.</p>
-            </div>
-            </div>
-            </div>
-            </div> 
-
-  </section>
+		<div class="page-section bg-dark text-white">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">V-DAY EVENT</h2>
+						<hr class="divider light my-4">
+						<p class="text-white-50 mb-5">We had our pre-valentine event <strong>"Love Booth"</strong>, where we provided a sky of fun to the love birds. Valentines Day Card was sold by Rotaract Club of NIT Rourkela during NITRUtsav and the money
+							collected by selling them, were used to conduct other events. V-day is the major fundraiser project for the club. In this project, club members make handmade as well as printed cards and these are sold among the mass. The V-day project
+							was a very successful event of Rotaract club. This year Rotaractors sold numerous cards and managed to collect very good fund. Club also provided the facility to deliver card at recipients room on Valentine's day and sending card
+							anonymously was the best idea which helped in increasing the sales. The club sold printed cards for Valentine, friend as well as for prank in three different sizes.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-  <!-- UPCOMING EVENTS -->
-  <section id="upcoming_events">
-  	<div class="page-section bg-dark text-white">
-  		<div class="container">
-  			<div class="row justify-content-center">
-  				<div class="col-lg-8 text-center">
-  					<h2 class="text-white mt-0"><strong>STAY TUNED</strong></h2>
-  					<!--<hr class="divider light my-4">
-  					<p class="text-white-50 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+		<div class="page-section bg-primary">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">Housie Event</h2>
+						<hr class="divider light my-4">
+						<p class="text-white-50 mb-5">The Rotaract Club organized a fun event,<strong>"Tambola"</strong>in the institute where we sold a large number of housie tickets and the money raised by selling the tickets are used for a good cause. The
+							event took place on 4th February at the Lecture Avenue of the institute where a large mass of enthusiastic students was there to be a part of the event.The event gathered a huge crowd as people kept coming in, to try out their luck.
+							Each ticket cost 10 rupees. The money raised from the housie and V-Day , was utilized to organize an event "SaPNA", awareness on menstruation, at the OSAP Battalion slum. The happiness that we see in the students' eyes is what we work
+							for and that happiness is what satisfies us.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  	<div class="page-section bg-primary">
-  		<div class="container">
-  			<div class="row justify-content-center">
-  				<div class="col-lg-8 text-center">
-  					<h2 class="text-white mt-0">Some Event</h2>
-  					<hr class="divider light my-4">
-  					<p class="text-white-50 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+		<div class="page-section bg-dark text-white">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">OSAP Battalion</h2>
+						<hr class="divider light my-4">
+						<p class="text-white-50 mb-5">Under this event, we went to OSAP Battalion which is a slum in Rourkela. We donated clothes and stationary items such as pencils to the inhabitants.Giving is the greatest art of grace and this event was a
+							small act of many. The children's faces were bright with laughter as we gave them chocolates and played games. Some of them even volunteered to perform on songs for us. It was a great learning experience for all of us. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section bg-primary">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">Birsa Munda Bidyapeeth</h2>
+						<hr class="divider light my-4">
+						<h6><strong>"Education is the most powerful weapon that we can use to change the world."</strong></h6>
+						<p class="text-white-50 mb-5">Keeping this in mind, we go to Birsa Munda Bidyapeeth every weekend. it is a government aided school which teaches the children of the area. Education is the most basic right of a person. If we are able to
+							provide good education to any child, then it's our priviledge. We try to teach the students within the best of our capabilities by providing visual aids along with board work so that they can grasp more knowledge. This is a continued
+							process throughout the year which helps us keep track of our work.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section bg-dark text-white">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">BlueLink</h2>
+						<hr class="divider light my-4">
+						<p class="text-white-50 mb-5">It is an initiative by our club for the prevention and cure of ocean pollution. It was held during Innovision 2018- the technomanagement fest of NIT Rourkela. Thos event witnessed a formation of human chain
+							in the shape of OCEAN and was captured with the help of a drone. The participants of the human chain were given freebies such as caps and arm bands. Photo booths were also made by us and stationed in the ground where the event took
+							place. This social event was a huge success and made it to newspapers.
+							There, the BlueLink event was a stepping stone towards stopping ocean pollution and proving <strong>#IndiaSpeaksBlueToo</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section bg-primary">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">BlueTalk</h2>
+						<hr class="divider light my-4">
+						<p class="text-white-50 mb-5">BlueTalk was an awareness program organised in collaboration with Hourglass club of nIT Rourkela with an aim to create awareness about environment's degrading situation.<strong>"Ocean pollution- the greatest
+								tragedy of our generation"</strong> was thoroughly discussed during the entire event. A presentation was delivered by the members of Hourglass demonstrating the 'WHAT,HOW,WHYs' of ocean pollution. A Question-answer session was held
+							after the presentation to help the audience understand what the club was doing towards eliminating ocean pollution.It was a precursor to our event BlueLink.
+
+							Our ocean is in dire need of help. Garbage dumped into the ocean is continuously degrading its quality. Animals are dying and water-borne diseases are spreading and this was just a small step towards starting a revolution. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page-section bg-dark text-white">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<h2 class="text-white mt-0">Shanti Bhawan</h2>
+						<hr class="divider light my-4">
+						<p class="text-white-50 mb-5">Under this event the Rotaract Club visited an old age home ,Shanti Bhawan in Rourkela.Prior to this event,the members conducted a cloth donation drive in the campus of NIT Rourkela where they approached the
+							faculty members to contribute to charity.The collected wearables were then donated to the elders and children in Shanti Bhawan. We had an interactive evening with them where they shared their tales of woes and melancholia. Entertainment
+							programmes such as dance and songs were prepared by us for their enjoyment.Efforts were put in to surround them with food for the evening on a happy and fulfilling note.
+							<br>
+							The aim was to provide a day of companionship and emotional support to the elderly and the children residing in Shanti Bhawan.We learnt about their difficulties so as to provide them with better service next time.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- calender -->
+	<section class="page-section bg-dark text-white" id="calender_js">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 text-center">
+				<div class="col-lg-4 mr-auto text-center">
+					<h2 class="text-center">Upcoming Events</h2>
+				</div>
+				<div id="caleandar"></div>
+			</div>
+		</div>
+	</section>
 
 
-    <div class="page-section bg-dark text-white">
-  		<div class="container">
-  			<div class="row justify-content-center">
-  				<div class="col-lg-8 text-center">
-  					<h2 class="text-white mt-0">Some Event</h2>
-  					<hr class="divider light my-4">
-  					<p class="text-white-50 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  				</div>
-  			</div>
-  		</div>
-  	</div>-->	
-  </section>
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Footer -->
+	<!-- Plugin JavaScript -->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-  <br><br>
+	<!-- Custom scripts for this template -->
+	<script src="js/creative.js"></script>
 
-  <div class="navbar navbar-inverse navbar-fixed-bottom">
-      <div class="container">
-        
-        <div class="navbar-text pull-left">
-          <div id="caleandar"></div>
-        </div>
+	<!-- javascript files for bootstrap -->
+	<script type="text/javascript" src="js/calender_js/caleandar.js"></script>
+	<script type="text/javascript" src="js/calender_js/demo.js"></script>
 
-        <div class="navbar-text pull-right">
-          <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-          <a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-          <br><br>
-          <h6><p><b>Copyright &copy; 2019 - Rotaract@NITRKL</b></p></h6>
-        </div>
-
-      </div>
-  </div>
+	<!-- Footer -->
 
 
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container">
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+			<div class="navbar-text pull-left">
+				<p>Copyright &copy; 2019 - Rotaract@NITRKL</p>
+			</div>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+			<div class="navbar-text pull-right">
+				<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+				<a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+				<a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+			</div>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.js"></script>
-
-  <!-- javascript for calender -->
-  <script type="text/javascript" src="js/calender_js/caleandar.js"></script>
-  <script type="text/javascript" src="js/calender_js/demo.js"></script>
-
+		</div>
+	</div>
 
 
 </body>
+
 </html>
