@@ -111,6 +111,7 @@ ul ol {
   margin-bottom: 0;
 }
 
+
 dt {
   font-weight: 700;
 }
@@ -6014,7 +6015,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .closebtn {
   float: right;
-  /*padding: 100px 100px;*/ 
+  /*padding: 100px 100px;*/
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
