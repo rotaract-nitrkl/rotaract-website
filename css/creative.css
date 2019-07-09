@@ -6014,6 +6014,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .closebtn {
   float: right;
+  /*padding: 100px 100px;*/ 
   font-size: 40px;
   font-weight: 700;
   line-height: 1;
