@@ -1,12 +1,13 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
 
   <title>Rotaract@NITRKL</title>
 
@@ -24,7 +25,15 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.css" rel="stylesheet">
 
+  <!-- CSS files for calender -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="css/calender_css/demo.css" />
+  <link rel="stylesheet" href="css/calender_css/theme2.css" /> -->
+
+
+
 </head>
+
 <body id="page-top">
 
   <!-- Navigation -->
@@ -99,6 +108,11 @@
     </div>
   </section>
 
+
+  <!-- Gallery Section -->
+
+  <!-- Gallery Section -->
+
 <!--INFORMATION SECTION-->
   <section class="page-section bg-dark text-white" id="info">
         <div class="container">
@@ -109,9 +123,11 @@
             </div>
           </div>
         </div>
-  <div class="container">
+<div class="container"> 
+
     <div class="row">
-       <!--col-lg-6,1 start-->
+      
+      <!--col-lg-6,1 start-->
         <div class="col-lg-6" style="float: left; background-color: transparent;">
           <div class="panel panel-default">
             <div class="panel-heading" style="border: 5px solid #e62952; font-weight: bolder;"></strong>Social Events</strong></div>
@@ -140,7 +156,7 @@
         
             <li class="Page-list-group-item">
               <div style="position:relative">
-                <p><strong>Quit India Day, Nagasaki Day - August 9,2019</strong></p> &nbsp; 
+                <p><strong>Quit India Day, Nagasaki Day - August 9,2019</p> &nbsp; 
               </div>
             </li>
         
@@ -174,22 +190,55 @@
       </div>
     </div>
   </div>
+  <!--col-lg-6,1 end-->
 
-  <div class="col-lg-6" style="float: center; background-color: transparent;">
+    <!--col-lg-6,2 start-->
+      <div class="col-lg-6" style="float: right; background-color: transparent;">
           <div class="panel panel-default">
-            <div class="panel-heading text-center">Thought of the Week</div>
+            <div class="panel-heading">Thought of the Week</div>
               <div class="panel-body">
-                <img src="img/thought.png" style="height: 200px; width: 200px; justify-content: center;">
+                <img src="img/thought.png" style="height: 200px; width: 200px;">
                   <div id="thought">
                     <p><blockquote> Climate Change is no longer some far-off problem; it is happening here, it is happening now.</blockquote></p>
                   </div>
               </div>
           </div>
       </div>
-
-    </div>
-  </div>
+    <!--col-lg-6,2 end-->
+  
+  </div>          
+   
+</div> 
   </section>
+
+
+
+
+
+
+
+
+
+
+  <!--<section class="page-section bg-dark text-white" id="Gallery">
+    <hr class="divider my-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="container">
+          <div id="caleandar"></div>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="container">
+          <img class="img-fluid" src="img/thought.png" style="height:100px;width:100px;"></img>
+          <h2 class="text-center">Thought of the Week</h2>
+          <div id="thought">
+            <p>Climate Change is no longer some far-off problem; it is happening here, it is happening now.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>-->
 
   <section class="page-section bg-primary text-white" id="about">
     <div class="container">
@@ -201,10 +250,9 @@
         </div>
       </div>
     </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 text-center">
+    <div class="container">
+      <div class="row justify-content-left">
+        <div class="col-lg-6 text-center">
           <h3 class="text-justify-center"> Facebook</h3>
           <div class="fb-page fb_iframe_widget fb_iframe_widget_fluid" data-href="https://www.facebook.com/RotaractNITR/" data-tabs="timeline" data-width="370" data-height="700" data-small-header="false" data-adapt-container-width="true"
             data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered"
@@ -216,15 +264,25 @@
               </iframe>
             </span>
           </div>
+
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-lg-6 text-center">
           <h3 class="text-justify-center"> Twitter </h3>
           <a class="twitter-timeline" data-lang="en" data-width="370" data-height="700" data-theme="light" href="https://twitter.com/Rotaract_NITRkl?ref_src=twsrc%5Etfw">Tweets by Rotaract_NITRkl</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+
+        <!-- <div class="col-lg-4 text-center">
+          <h3 class="text-justify-center"> Instagram </h3> -->
+          <!-- <iframe src="http://instaembedder.com/gallery-v2.php?width=200&cols=2&rows=6&margin=8&color=gray&likes=1&share_buttons=1&comments=1&date=1&link=1&display_username=1&caption=1&frame=1&image_border=8&frame_color=white&cid=12132&"
+            frameborder="1 " width="470" height="700"></iframe> -->
+        <!-- </div> -->
       </div>
     </div>
 
+
+    </div>
+    </div>
   </section>
 
   <!-- contact us -->
@@ -250,7 +308,25 @@
       </div>
   </section>
 
-  
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.js"></script>
+
+  <!-- javascript files for bootstrap -->
+  <!-- <script type="text/javascript" src="js/calender_js/caleandar.js"></script>
+  <script type="text/javascript" src="js/calender_js/demo.js"></script> -->
+
+
   <!-- Footer -->
 
 
@@ -274,17 +350,6 @@
     </div>
   </div>
 
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.js"></script> 
-
 </body>
+
 </html>
